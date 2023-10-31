@@ -1,0 +1,24 @@
+mutation {
+  addCategory(category: {name: "Informática"}) {
+    name
+    id
+  }
+}
+
+query{
+  categoryById(id: "64c4e0f7-33fd-4992-ac0f-292749f341d3") {
+    name
+    id
+  }
+}
+
+
+mutation {
+  addProduct(productInput: {name: "Notebook",
+    price : 6000.00, 
+    categoryId : "2a1a783a-1a79-4f7a-b5f6-1dcdb043759e"
+  }) {
+    name
+    id
+  }
+}
